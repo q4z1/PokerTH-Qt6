@@ -28,6 +28,7 @@ Rectangle {
                 id: logsPageLabel
                 color: Config.Settings.palette.secondary.col200
                 text: qsTr("Logs")
+                font.family: Config.Settings.loadedFont.font.family
                 font.pointSize: 14
                 font.bold: true
             }

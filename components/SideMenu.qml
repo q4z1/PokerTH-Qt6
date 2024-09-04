@@ -32,6 +32,7 @@ Drawer {
             id: sideMenuLabel
             color: Config.Settings.palette.secondary.col200
             text: qsTr("PokerTH - v2.0 alpha")
+            font.family: Config.Settings.loadedFont.font.family
             Layout.alignment: Qt.AlignCenter
             Layout.bottomMargin: 24
             font.pointSize: 16
@@ -85,6 +86,7 @@ Drawer {
                         Layout.topMargin: 4
                         Layout.bottomMargin: 4
                         color: Config.Settings.palette.secondary.col200
+                        font.family: Config.Settings.loadedFont.font.family
                         font.pointSize: 12
                         text: "StartSideMenuItem"
                     }

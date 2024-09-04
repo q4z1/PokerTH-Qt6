@@ -28,6 +28,7 @@ Rectangle {
                 id: aboutPagePageLabel
                 color: Config.Settings.palette.secondary.col200
                 text: qsTr("Über PokerTH")
+                font.family: Config.Settings.loadedFont.font.family
                 font.pointSize: 14
                 font.bold: true
             }

@@ -28,6 +28,7 @@ Rectangle {
                 id: networkGameCreatePagePageLabel
                 color: Config.Settings.palette.secondary.col200
                 text: qsTr("Netzwerkspiel erstellen")
+                font.family: Config.Settings.loadedFont.font.family
                 font.pointSize: 14
                 font.bold: true
             }

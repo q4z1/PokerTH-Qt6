@@ -83,6 +83,7 @@ Rectangle {
                         id: preLoaderProgressInfoText
                         text: qsTr(Config.Settings.progressMessages[Math.floor(Math.random() * Config.Settings.progressMessages.length)])
                         color: Config.Settings.palette.secondary.col200
+                        font.family: Config.Settings.loadedFont.font.family
                         font.pointSize: 12
 
                         Timer {
@@ -122,6 +123,7 @@ Rectangle {
                     id: preLoaderFooterText
                     text: qsTr("PokerTH - v2.0 alpha")
                     color: Config.Settings.palette.secondary.col200
+                    font.family: Config.Settings.loadedFont.font.family
                     font.pointSize: 12
                     style: Text.Outline
                     styleColor: Config.Settings.palette.secondary.col600

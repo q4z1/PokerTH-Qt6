@@ -17,6 +17,7 @@ Rectangle {
         id: label
         anchors.centerIn: parent
         color: Config.Settings.palette.secondary.col200
+        font.family: Config.Settings.loadedFont.font.family
         text: "Button Text"
 
     }

@@ -1,6 +1,8 @@
 pragma Singleton
 import QtQuick 6.5
 
+// import "../resources"
+
 QtObject {
     readonly property QtObject palette: QtObject {
         readonly property QtObject secondary: QtObject {
@@ -12,6 +14,10 @@ QtObject {
             readonly property color col600: "#394150"
             readonly property color col700: "#1d222b"
         }
+    }
+
+    readonly property QtObject loadedFont: FontLoader {
+        source: "../resources/Rubik-VariableFont_wght.ttf"
     }
 
     readonly property var progressMessages: [

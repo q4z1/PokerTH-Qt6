@@ -28,6 +28,7 @@ Rectangle {
                 id: settingsPageLabel
                 color: Config.Settings.palette.secondary.col200
                 text: qsTr("Einstellungen")
+                font.family: Config.Settings.loadedFont.font.family
                 font.pointSize: 14
                 font.bold: true
             }

@@ -28,6 +28,7 @@ Rectangle {
                 id: localGamePagePageLabel
                 color: Config.Settings.palette.secondary.col200
                 text: qsTr("Lokales Spiel")
+                font.family: Config.Settings.loadedFont.font.family
                 font.pointSize: 14
                 font.bold: true
             }
