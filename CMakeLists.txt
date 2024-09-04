@@ -18,9 +18,11 @@ qt_add_qml_module(pokerth
     NO_RESOURCE_TARGET_PATH
     QML_FILES
         "pokerth.qml"
+        "components/GamePlayerBox.qml"
         "components/SideMenu.qml"
         "components/StartPageButton.qml"
         "pages/AboutPage.qml"
+        "pages/GamePage.qml"
         "pages/InternetGamePage.qml"
         "pages/LocalGamePage.qml"
         "pages/LogsPage.qml"
@@ -39,6 +41,9 @@ qt_add_qml_module(pokerth
         "resources/dotsThree.svg"
         "resources/dotsThreeVertical.svg"
         "resources/download.svg"
+        "resources/gameBackground.svg"
+        "resources/gameTableHD.png"
+        "resources/gameTableUHD.png"
         "resources/globe.svg"
         "resources/hourglass.svg"
         "resources/network.svg"

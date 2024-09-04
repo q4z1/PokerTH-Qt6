@@ -152,6 +152,6 @@ ApplicationWindow {
 
     Connections {
         target: mainStackView
-        Component.onDestruction: topBarMenuIcon.source = mainStackViewDepth === 1 ? "resources/threeLines.svg" : "resources/caretLeft.svg"
+        Component.onDestruction: topBarMenuIcon.source = mainStackView.depth === 1 ? "resources/threeLines.svg" : "resources/caretLeft.svg"
     }
 }
