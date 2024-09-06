@@ -21,7 +21,7 @@ Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.alignment: Qt.AlignTop
-            Layout.margins: 0
+            Layout.topMargin: -38
             color: Config.Settings.palette.secondary.col700
 
             // Label {

@@ -19,6 +19,7 @@ qt_add_qml_module(pokerth
     QML_FILES
         "pokerth.qml"
         "components/GamePlayerBox.qml"
+        "components/GamePlayerSelfBox.qml"
         "components/SideMenu.qml"
         "components/StartPageButton.qml"
         "pages/AboutPage.qml"
@@ -37,6 +38,8 @@ qt_add_qml_module(pokerth
         "resources/cardBackground.svg"
         "resources/caretLeft.svg"
         "resources/checkSquare.svg"
+        "resources/chip.svg"
+        "resources/chipStack.svg"
         "resources/close.svg"
         "resources/dotsThree.svg"
         "resources/dotsThreeVertical.svg"

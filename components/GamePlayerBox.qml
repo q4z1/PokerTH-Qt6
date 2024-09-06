@@ -5,183 +5,194 @@ import QtQuick.Layouts
 
 import "../config" as Config
 
-Rectangle {
+GridLayout {
     id: root
-
+    columns: 1
+    rows: 2
+    Layout.maximumHeight: 102
+    
+    property bool up: false
     property string yellow: "#E3C800"
 
-    color: "transparent"
-    Layout.minimumWidth: 112
-    Layout.maximumWidth: 168
-    Layout.minimumHeight: 76
-    Layout.maximumHeight: 104
+    RowLayout{
+        id: playerActions
+        Layout.alignment: root.up ? Qt.AlignBottom : Qt.AlignTop
+        Layout.row: root.up ? 1 : 2
+        Layout.preferredHeight: 18 * gamePage.vScaleFactor
+        Layout.maximumHeight: 26
+
+        RowLayout {
+            Layout.alignment: root.up ? Qt.AlignBottom : Qt.AlignTop
+            
+            IconImage {
+                Layout.maximumWidth: 26
+                Layout.preferredWidth: 18 * gamePage.vScaleFactor
+                Layout.preferredHeight: 18 * gamePage.vScaleFactor
+                Layout.maximumHeight: 26
+                source: "../resources/chipStack.svg"
+            }
+
+            Text {
+                id: playerBet
+                horizontalAlignment: Text.AlignLeft
+                leftPadding: 4
+                bottomPadding: 3
+                Layout.preferredHeight: 22
+                color: Config.Settings.palette.secondary.col100
+                font.bold: true
+                Component.onCompleted: {
+                    text = "$333"
+                }
+            }
+        }
+
+        // IconImage {
+        //     Layout.alignment: root.up ? Qt.AlignBottom : Qt.AlignTop
+        //     Layout.maximumWidth: 34
+        //     Layout.preferredWidth: 24 * gamePage.vScaleFactor
+        //     Layout.maximumHeight: 34
+        //     Layout.preferredHeight: 24 * gamePage.vScaleFactor
+        //     source: "../resources/chip.svg"
+        // }
+    }
 
     Rectangle {
-        anchors.fill: parent
-        color: Config.Settings.palette.secondary.col600
-        opacity: 0.8
-        radius: 5
-    }
+        id: playerBox
+        Layout.row: root.up ? 2 : 1
 
-    // RowLayout {
-    //     width: parent.width
-    //     height: parent.height / 2
+        color: "transparent"
+        Layout.minimumWidth: 112
+        Layout.maximumWidth: 168
+        Layout.minimumHeight: 76
+        Layout.maximumHeight: 104
+        Layout.preferredHeight: 76
 
-    //     Image {
-    //         id: avatar
-    //         Layout.preferredWidth: parent.width / 2 - 8
-    //         Layout.preferredHeight: parent.width / 2 - 8
-    //         Layout.margins: 4
-    //         Layout.alignment: Qt.AlignTop
-    //         fillMode: Image.PreserveAspectFit
-    //         source: "../resources/pokerth.svg"
-    //     }
-
-    //     Rectangle {
-    //         id: hand
-    //         Layout.preferredWidth: parent.width / 2
-    //         Layout.preferredHeight: parent.width / 2
-    //         Layout.alignment: Qt.AlignLeft
-    //         Layout.margins: 8
-    //         color: "transparent"
-
-    //         Image {
-    //             id: leftHand
-    //             x: -16
-    //             y: 8
-    //             width: parent.width / 3 * 2
-    //             // height: parent.height - 16
-    //             fillMode: Image.PreserveAspectFit
-    //             source: "../resources/cardBackground.svg"
-    //             transform: Rotation { origin.x: leftHand.width / 2; origin.y: leftHand.height; angle: -11 }
-    //         }
-    //         Image {
-    //             id: rightHand
-    //             x: parent.width / 4 - 16
-    //             y: 8
-    //             width: parent.width / 3 * 2
-    //             // height: parent.height - 16
-    //             fillMode: Image.PreserveAspectFit
-    //             source: "../resources/cardBackground.svg"
-    //             transform: Rotation { origin.x: rightHand.width; origin.y: rightHand.height; angle: 11 }
-    //         }
-    //     }
-    // }
-
-    Row {
-        id: topRow
-        width: parent.width - 6
-        height: parent.height / 2 - 6
-        x: 6
-        y: 6
         Rectangle {
-            id: avatarRow
-            width: parent.width / 12 * 5.1
-            height: parent.width / 12 * 5.1
-
-            Rectangle {
-                anchors.fill: parent
-                border.width: 1
-                border.color: Config.Settings.palette.secondary.col200
-                color: Config.Settings.palette.secondary.col600
-                opacity: 0.5
-            }
-
-            IconImage {
-                id: avatar
-                width: parent.width
-                fillMode: IconImage.PreserveAspectFit
-                source: "../resources/pokerth.svg"
-            }
+            anchors.fill: parent
+            color: Config.Settings.palette.secondary.col600
+            opacity: 0.8
+            radius: 5
         }
-
 
         Row {
-            id: cardsRow
-            width: parent.width / 12 * 5.5
+            id: topRow
+            width: parent.width - 6
+            height: parent.height / 2 - 6
+            x: 6
+            y: 6
             Rectangle {
-                id: card1Item
-                x: avatarRow.width + 3
-                rotation: -6
-                width: parent.width
-                y: 0
-                IconImage {
-                    id: card1
-                    width: parent.width - 6
-                    fillMode: IconImage.PreserveAspectFit
-                    source: "../resources/cardBackground.svg"
+                id: avatarRow
+                width: parent.width / 12 * 5.1
+                height: parent.width / 12 * 5.1
+
+                Rectangle {
+                    anchors.fill: parent
+                    border.width: 1
+                    border.color: Config.Settings.palette.secondary.col200
+                    color: Config.Settings.palette.secondary.col600
+                    opacity: 0.5
                 }
 
-                MultiEffect {
-                    source: card1
-                    anchors.fill: card1
-                    shadowEnabled: true
-                    shadowOpacity: 1
-                    shadowVerticalOffset: 1
-                    shadowHorizontalOffset: -1
-                    shadowBlur: 1
-                    autoPaddingEnabled: true
-                }
-            }
-
-            Rectangle {
-                id: card2Item
-                x: avatarRow.width + card1.width / 2
-                width: parent.width - 6
-                rotation: 6
-                color: "transparent"
-                y: 0
                 IconImage {
-                    id: card2
-                    fillMode: IconImage.PreserveAspectFit
+                    id: avatar
                     width: parent.width
-                    source: "../resources/cardBackground.svg"
-                }
-
-                MultiEffect {
-                    source: card2
-                    anchors.fill: card2
-                    shadowEnabled: true
-                    shadowOpacity: 0.5
-                    shadowVerticalOffset: 1
-                    shadowHorizontalOffset: -1
-                    shadowBlur: 1
-                    autoPaddingEnabled: true
+                    fillMode: IconImage.PreserveAspectFit
+                    source: "../resources/pokerth.svg"
                 }
             }
-        }
-    }
 
-    Row {
-        id: playerNameRow
-        width: parent.width - 8
-        height: parent.height / 2 -8
-        x: 6
-        y: parent.height - 22
-        Text {
-            id: playerName
-            width: parent.width / 2
-            horizontalAlignment: Text.AlignLeft
-            color: Config.Settings.palette.secondary.col100
-            font.bold: true
-            Component.onCompleted: {
-                text = "sp0ck"
+
+            Row {
+                id: cardsRow
+                width: parent.width / 12 * 4
+                Rectangle {
+                    id: card1Item
+                    x: avatarRow.width + 12
+                    rotation: -6
+                    width: parent.width - 2
+                    y: 0
+                    IconImage {
+                        id: card1
+                        width: parent.width
+                        fillMode: IconImage.PreserveAspectFit
+                        source: "../resources/cardBackground.svg"
+                    }
+
+                    MultiEffect {
+                        source: card1
+                        anchors.fill: card1
+                        shadowEnabled: true
+                        shadowOpacity: 1
+                        shadowVerticalOffset: 1
+                        shadowHorizontalOffset: -1
+                        shadowBlur: 1
+                        autoPaddingEnabled: true
+                    }
+                }
+
+                Rectangle {
+                    id: card2Item
+                    x: avatarRow.width + card1.width / 3 * 2
+                    width: parent.width - 2
+                    rotation: 6
+                    color: "transparent"
+                    y: 1
+                    IconImage {
+                        id: card2
+                        fillMode: IconImage.PreserveAspectFit
+                        width: parent.width
+                        source: "../resources/cardBackground.svg"
+                    }
+
+                    MultiEffect {
+                        source: card2
+                        anchors.fill: card2
+                        shadowEnabled: true
+                        shadowOpacity: 0.5
+                        shadowVerticalOffset: 1
+                        shadowHorizontalOffset: -1
+                        shadowBlur: 1
+                        autoPaddingEnabled: true
+                    }
+                }
             }
         }
-        Text {
-            id: playerStack
-            width: parent.width / 2
-            horizontalAlignment: Text.AlignHCenter
-            color: root.yellow
-            font.bold: true
-            Component.onCompleted: {
-                text = "$10000"
+
+        Row {
+            id: playerNameRow
+            width: parent.width - 8
+            height: parent.height / 2 -8
+            x: 6
+            y: parent.height - 22
+
+            Text {
+                id: playerName
+                width: parent.width / 2
+                horizontalAlignment: Text.AlignLeft
+                color: Config.Settings.palette.secondary.col100
+                font.bold: true
+                Component.onCompleted: {
+                    text = "Player"
+                }
+            }
+
+            Text {
+                id: playerStack
+                width: parent.width / 2
+                horizontalAlignment: Text.AlignRight
+                rightPadding: 6
+                color: root.yellow
+                font.bold: true
+                Component.onCompleted: {
+                    text = "$10000"
+                }
             }
         }
-    }
 
-    RowLayout {
-        width: parent.width
-        height: parent.height / 2
+        RowLayout {
+            width: parent.width
+            height: parent.height / 2
+        }
     }
 }
+

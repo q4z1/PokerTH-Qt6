@@ -22,7 +22,13 @@ ApplicationWindow {
     visible: true
     title: qsTr("PokerTH - v2.0 alpha")
 
+    Rectangle {
+        anchors.fill: parent
+        color: Config.Settings.palette.secondary.col700
+    }
+
     ColumnLayout{
+        id: mainLayout
         anchors.fill: parent
         Layout.alignment: Qt.AlignTop
         spacing: 0
