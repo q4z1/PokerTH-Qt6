@@ -91,6 +91,7 @@
         "qqmlengine": "cpp",
         "*.moc": "cpp"
     },
-    "qt-official.qtFolder": "",
-    "qt-core.qtInstallationRoot": "",
+    "qt-official.qtFolder": "/usr/lib/qt6",
+    "qt-core.qtInstallationRoot": "/usr/lib/qt6",
+    "cmake.options.statusBarVisibility": "visible",
 }
