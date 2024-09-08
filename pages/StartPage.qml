@@ -47,35 +47,35 @@ Rectangle {
                     anchors.centerIn: parent
                     spacing: 18
 
-                    StartPageButton {
+                    CustomButton {
                         text: qsTr("Internetspiel")
                         onClicked: {
                             mainStackView.push("InternetGamePage.qml")
                         }
                     }
 
-                    StartPageButton {
+                    CustomButton {
                         text: qsTr("Lokales Spiel starten")
                         onClicked: {
                             mainStackView.push("LocalGamePage.qml")
                         }
                     }
 
-                    StartPageButton {
+                    CustomButton {
                         text: qsTr("Netzwerkspiel erstellen")
                         onClicked: {
                             mainStackView.push("NetworkGameCreatePage.qml")
                         }
                     }
 
-                    StartPageButton {
+                    CustomButton {
                         text: qsTr("Netzwerkspiel beitreten")
                         onClicked: {
                             mainStackView.push("NetworkGameEnterPage.qml")
                         }
                     }
 
-                    StartPageButton {
+                    CustomButton {
                         text: qsTr("Logs")
                         onClicked: {
                             mainStackView.push("LogsPage.qml")

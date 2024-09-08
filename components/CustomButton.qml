@@ -3,7 +3,7 @@ import QtQuick
 import "../config" as Config
 
 Rectangle {
-    id: root
+    id: customButton
 
     property alias text: label.text
     signal clicked
@@ -29,7 +29,7 @@ Rectangle {
         hoverEnabled: true
 
         onClicked: {
-            root.clicked()
+            customButton.clicked()
         }
 
         onEntered: {
