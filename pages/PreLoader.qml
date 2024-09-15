@@ -95,7 +95,7 @@ Rectangle {
                         }
 
                         Timer {
-                            interval: 1 // @FIXME: increase in productive mode
+                            interval: 5000 // @FIXME: increase in productive mode
                             running: true
                             repeat: false
                             onTriggered: {
