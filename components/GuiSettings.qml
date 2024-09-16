@@ -90,46 +90,46 @@ Rectangle {
                         }
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Rechte Toolbox anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Linke Toolbox anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Ausblend-Abination für Verliererkarten")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Animierte Karten")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("F-Tasten-Reihenfolge umkehren (F1 - F4)")
-                        isToggled: false
+                        isChecked: false
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Symbole für Small Blind und Big Blind anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Kartenchancenmonitor anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Eigene Karten nur bei Mausklick anzeigen anzeigen")
-                        isToggled: false
+                        isChecked: false
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Startbildschirm beim Startvorgang deaktivieren")
-                        isToggled: false
+                        isChecked: false
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Pokerausdrücke - wie Check, Call und Raise - beim Spieltisch-Stil nicht übersetzen")
                     }
                 }
@@ -137,35 +137,35 @@ Rectangle {
                 ColumnLayout {
                     id: networkTab
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Landesflagge in der Ecke des Avatars anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Netzwerkstatus-Farbe in der Ecke des Avatars anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Cursor ins \"Biete\"-Eingabefeld setzen, wenn Sie an der Reihe sind")
-                        isToggled: false
+                        isChecked: false
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Versehentliches Call nach einem großen Raise verhindern")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Avatare von ignorierten Spielern nicht verbergen")
-                        isToggled: false
+                        isChecked: false
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Lobby-Chat anzeigen")
                     }
 
-                    CustomToggle {
+                    CustomCheckBox {
                         label: qsTr("Emoticons im Chat deaktivieren")
-                        isToggled: false
+                        isChecked: false
                     }
                 }
             }
