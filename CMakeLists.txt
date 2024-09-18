@@ -15,6 +15,7 @@ set(qml_singletons
 
 qt_add_qml_module(pokerth
     URI pokerth_qt6
+    VERSION 1.0
     NO_RESOURCE_TARGET_PATH
     QML_FILES
         "pokerth.qml"
@@ -107,11 +108,11 @@ install(TARGETS pokerth
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
-qt_generate_deploy_qml_app_script(
-    TARGET pokerth
-    OUTPUT_SCRIPT deploy_script
-    MACOS_BUNDLE_POST_BUILD
-    NO_UNSUPPORTED_PLATFORM_ERROR
-    DEPLOY_USER_QML_MODULES_ON_UNSUPPORTED_PLATFORM
-)
-install(SCRIPT ${deploy_script})
+#qt_generate_deploy_qml_app_script(
+#    TARGET pokerth
+#    OUTPUT_SCRIPT deploy_script
+#    MACOS_BUNDLE_POST_BUILD
+#    NO_UNSUPPORTED_PLATFORM_ERROR
+#    DEPLOY_USER_QML_MODULES_ON_UNSUPPORTED_PLATFORM
+#)
+#install(SCRIPT ${deploy_script})

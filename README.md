@@ -1,4 +1,5 @@
 Deps: qt6-base qt6-svg cmake ninja ... also build-essential on deb systems
+Ubuntu noble: sudo apt install build-essential cmake ninja-build qt6-base-dev qt6-declarative-dev qml-module-qtquick2 libgl1-mesa-dev libxkbcommon-dev
 
 1. cmake -S. -B./build -G Ninja
 
