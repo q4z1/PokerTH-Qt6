@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Universal
 import QtQuick.Layouts
+import QtQuick.VectorImage
+import QtQuick.Effects
 
 import "../config" as Config
 
@@ -19,11 +21,20 @@ Rectangle {
 
     RowLayout {
         spacing: 8
-        IconImage {
-            color: Config.Settings.palette.secondary.col200
+        VectorImage {
+            id: toggleIcon
             source: toggle.isToggled ? "../resources/toggleRight.svg" : "../resources/toggleLeft.svg"
             Layout.preferredWidth: 32
             Layout.preferredHeight: 24
+            visible: true
+
+            MultiEffect {
+              id: toggleIconCol
+              source: toggleIcon
+              anchors.fill: toggleIcon
+              colorization: 1.0 // opacity equivalent
+              colorizationColor: Config.Settings.palette.secondary.col200
+            }
         }
 
         Label {

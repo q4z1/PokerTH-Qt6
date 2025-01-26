@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Effects
 import QtQuick.Layouts
+import QtQuick.VectorImage
 
 import "../config" as Config
 
@@ -43,10 +44,10 @@ Rectangle {
                 opacity: 0.5
             }
 
-            IconImage {
+            VectorImage {
                 id: avatar
                 width: parent.width
-                fillMode: IconImage.PreserveAspectFit
+                fillMode: VectorImage.PreserveAspectFit
                 source: "../resources/pokerth.svg"
             }
         }
@@ -61,10 +62,10 @@ Rectangle {
                 rotation: -6
                 width: parent.width - 2
                 y: 0
-                IconImage {
+                VectorImage {
                     id: card1
                     width: parent.width
-                    fillMode: IconImage.PreserveAspectFit
+                    fillMode: VectorImage.PreserveAspectFit
                     source: "../resources/cardBackground.svg"
                 }
 
@@ -87,9 +88,9 @@ Rectangle {
                 rotation: 6
                 color: "transparent"
                 y: 1
-                IconImage {
+                VectorImage {
                     id: card2
-                    fillMode: IconImage.PreserveAspectFit
+                    fillMode: VectorImage.PreserveAspectFit
                     width: parent.width
                     source: "../resources/cardBackground.svg"
                 }

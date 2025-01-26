@@ -1,9 +1,11 @@
 pragma ComponentBehavior: Bound
 
 import QtCore
-import QtQuick 6.5
+import QtQuick
+import QtQuick.VectorImage
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Effects
 
 import "config" as Config
 import "pages"
@@ -45,13 +47,13 @@ ApplicationWindow {
                 anchors.fill: parent
                 spacing: 8
 
-                IconImage {
+                VectorImage {
                     id: topBarMenuIcon
                     Layout.preferredWidth: 26
                     Layout.preferredHeight: 26
                     Layout.margins: 6
                     source: "resources/threeLines.svg"
-                    color: Config.Settings.palette.secondary.col200
+                    visible: true
 
                     MouseArea {
                         id: menuArea
@@ -68,14 +70,22 @@ ApplicationWindow {
                         }
 
                         onEntered: {
-                            topBarMenuIcon.color = Config.Settings.palette.secondary.col100
+                            topBarMenuIconCol.colorizationColor = Config.Settings.palette.secondary.col100
                         }
 
                         onExited: {
-                            topBarMenuIcon.color = Config.Settings.palette.secondary.col200
+                            topBarMenuIconCol.colorizationColor = Config.Settings.palette.secondary.col200
                         }
                     }
+                    MultiEffect {
+                      id: topBarMenuIconCol
+                      source: topBarMenuIcon
+                      anchors.fill: topBarMenuIcon
+                      colorization: 1.0 // opacity equivalent
+                      colorizationColor: Config.Settings.palette.secondary.col200
+                    }
                 }
+
 
                 Item {
                     id: topBarMenuSpace
@@ -83,13 +93,12 @@ ApplicationWindow {
                     Layout.horizontalStretchFactor: 2
                 }
 
-                IconImage {
+                VectorImage {
                     id: topBarSettingsIcon
                     Layout.preferredWidth: 24
                     Layout.preferredHeight: 24
                     Layout.margins: 6
                     source: "resources/settings.svg"
-                    color: Config.Settings.palette.secondary.col200
                     visible: true
 
 
@@ -105,14 +114,23 @@ ApplicationWindow {
                         }
 
                         onEntered: {
-                            topBarSettingsIcon.color = Config.Settings.palette.secondary.col100
+                            topBarSettingsIconCol.colorizationColor = Config.Settings.palette.secondary.col100
                         }
 
                         onExited: {
-                            topBarSettingsIcon.color = Config.Settings.palette.secondary.col200
+                            topBarSettingsIconCol.colorizationColor = Config.Settings.palette.secondary.col200
                         }
                     }
+
+                    MultiEffect {
+                      id: topBarSettingsIconCol
+                      source: topBarSettingsIcon
+                      anchors.fill: topBarSettingsIcon
+                      colorization: 1.0 // opacity equivalent
+                      colorizationColor: Config.Settings.palette.secondary.col200
+                    }
                 }
+
             }
         }
 

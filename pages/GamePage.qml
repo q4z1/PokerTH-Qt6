@@ -1,6 +1,8 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.VectorImage
+import QtQuick.Effects
 
 import "../components"
 import "../config" as Config
@@ -260,7 +262,7 @@ Rectangle {
                 opacity: 0.4
             }
 
-            IconImage {
+            VectorImage {
                 id: tableCard1
                 x: -2 * gamePage.hScaleFactor
                 y: 0
@@ -287,7 +289,7 @@ Rectangle {
                 opacity: 0.4
             }
 
-            IconImage {
+            VectorImage {
                 id: tableCard2
                 x: -2 * gamePage.hScaleFactor
                 y: 0
@@ -314,7 +316,7 @@ Rectangle {
                 opacity: 0.4
             }
 
-            IconImage {
+            VectorImage {
                 id: tableCard3
                 x: -2 * gamePage.hScaleFactor
                 y: 0
@@ -341,7 +343,7 @@ Rectangle {
                 opacity: 0.4
             }
 
-            IconImage {
+            VectorImage {
                 id: tableCard4
                 visible: false
                 x: -2 * gamePage.hScaleFactor
@@ -369,7 +371,7 @@ Rectangle {
                 opacity: 0.4
             }
 
-            IconImage {
+            VectorImage {
                 id: tableCard5
                 visible: false
                 x: -2 * gamePage.hScaleFactor

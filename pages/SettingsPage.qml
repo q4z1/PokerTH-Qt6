@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Universal
 import QtQuick.Layouts
+import QtQuick.VectorImage
+import QtQuick.Effects
 
 import "../config" as Config
 import "../components"
@@ -54,7 +56,7 @@ Rectangle {
                         property alias iconSource: iconImage.source
                         property alias iconWidth: iconImage.width
                         property alias iconHeight: iconImage.height
-                        property alias iconColor: iconImage.color
+                        property alias iconColor: iconImageCol.colorizationColor
                         signal clicked
 
                         labelText: name
@@ -69,7 +71,7 @@ Rectangle {
                             anchors.fill: parent
                             spacing: 6
 
-                            IconImage{
+                            VectorImage{
                                 id: iconImage
                                 Layout.leftMargin: 16
                                 Layout.topMargin: 4
@@ -77,6 +79,14 @@ Rectangle {
                                 Layout.alignment: Qt.AlignLeft
                                 Layout.preferredHeight: 24
                                 Layout.preferredWidth: 24
+
+                                MultiEffect {
+                                  id: iconImageCol
+                                  source: iconImage
+                                  anchors.fill: iconImage
+                                  colorization: 1.0 // opacity equivalent
+                                  colorizationColor: Config.Settings.palette.secondary.col200
+                                }
                             }
 
                             Text {
@@ -98,18 +108,18 @@ Rectangle {
                             cursorShape: Qt.PointingHandCursor
                             onClicked: {
                                 settingsMenuList.currentIndex = index
-                                settingsStackView.replaceCurrentItem("../components/" + source + "Settings.qml", {}, StackView.Immediate)
+                                settingsStackView.replaceCurrentItem("./pokerth_qt6/components/" + source + "Settings.qml", {}, StackView.Immediate)
                             }
 
                             onEntered: {
-                                iconImage.color = label.color = Config.Settings.palette.secondary.col100
+                                iconImageCol.colorizationColor = label.color = Config.Settings.palette.secondary.col100
                                 settingsMenuListItem.color = Config.Settings.palette.secondary.col600
                             }
 
                             onExited: {
-                                iconImage.color = label.color = Config.Settings.palette.secondary.col200
+                                iconImageCol.colorizationColor = label.color = Config.Settings.palette.secondary.col200
                                 if(settingsMenuList.currentIndex !== index){
-                                    iconImage.color = label.color = Config.Settings.palette.secondary.col200
+                                    iconImageCol.colorizationColor = label.color = Config.Settings.palette.secondary.col200
                                     settingsMenuListItem.color = "transparent"
                                 }
                             }

@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Effects
 import QtQuick.Layouts
+import QtQuick.VectorImage
 
 import "../config" as Config
 
@@ -24,7 +25,7 @@ GridLayout {
         RowLayout {
             Layout.alignment: root.up ? Qt.AlignBottom : Qt.AlignTop
             
-            IconImage {
+            VectorImage {
                 Layout.maximumWidth: 26
                 Layout.preferredWidth: 18 * gamePage.vScaleFactor
                 Layout.preferredHeight: 18 * gamePage.vScaleFactor
@@ -46,14 +47,6 @@ GridLayout {
             }
         }
 
-        // IconImage {
-        //     Layout.alignment: root.up ? Qt.AlignBottom : Qt.AlignTop
-        //     Layout.maximumWidth: 34
-        //     Layout.preferredWidth: 24 * gamePage.vScaleFactor
-        //     Layout.maximumHeight: 34
-        //     Layout.preferredHeight: 24 * gamePage.vScaleFactor
-        //     source: "../resources/chip.svg"
-        // }
     }
 
     Rectangle {
@@ -93,10 +86,10 @@ GridLayout {
                     opacity: 0.5
                 }
 
-                IconImage {
+                VectorImage {
                     id: avatar
                     width: parent.width
-                    fillMode: IconImage.PreserveAspectFit
+                    fillMode: VectorImage.PreserveAspectFit
                     source: "../resources/pokerth.svg"
                 }
             }
@@ -111,10 +104,10 @@ GridLayout {
                     rotation: -6
                     width: parent.width - 2
                     y: 0
-                    IconImage {
+                    VectorImage {
                         id: card1
                         width: parent.width
-                        fillMode: IconImage.PreserveAspectFit
+                        fillMode: VectorImage.PreserveAspectFit
                         source: "../resources/cardBackground.svg"
                     }
 
@@ -137,9 +130,9 @@ GridLayout {
                     rotation: 6
                     color: "transparent"
                     y: 1
-                    IconImage {
+                    VectorImage {
                         id: card2
-                        fillMode: IconImage.PreserveAspectFit
+                        fillMode: VectorImage.PreserveAspectFit
                         width: parent.width
                         source: "../resources/cardBackground.svg"
                     }

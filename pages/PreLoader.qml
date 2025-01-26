@@ -1,6 +1,7 @@
 
 
-import QtQuick 6.5
+import QtQuick
+import QtQuick.VectorImage
 import QtQuick.Controls
 import QtQuick.Controls.Universal
 import QtQuick.Effects
@@ -47,7 +48,7 @@ Rectangle {
                 id: preLoaderProgressRows
                 anchors.fill: parent
 
-                IconImage {
+                VectorImage {
                     id: preLoaderProgressIconPokerTH
                     Layout.alignment: Qt.AlignCenter
                     Layout.preferredWidth: 96
@@ -71,12 +72,12 @@ Rectangle {
                     Layout.margins: 8
                     spacing: 8
 
-                    IconImage {
+                    VectorImage {
                         id: preLoaderProgressInfoIconConsole
                         Layout.preferredWidth: 20
                         Layout.preferredHeight: 20
                         source: "../resources/terminal.svg"
-                        color: Config.Settings.palette.secondary.col200
+                        //color: Config.Settings.palette.secondary.col200
                     }
 
                     Text {

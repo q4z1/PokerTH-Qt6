@@ -1,6 +1,8 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick
+import QtQuick.VectorImage
+import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Effects
 
 import "../config" as Config
 
@@ -20,7 +22,7 @@ Drawer {
     ColumnLayout {
         anchors.fill: parent
 
-        IconImage{
+        VectorImage{
             source: "../resources/pokerth.svg"
             Layout.preferredWidth: 96
             Layout.preferredHeight: 96
@@ -69,7 +71,7 @@ Drawer {
                     anchors.fill: parent
                     spacing: 6
 
-                    IconImage{
+                    VectorImage{
                         id: iconImage
                         Layout.leftMargin: 16
                         Layout.topMargin: 4
@@ -77,6 +79,14 @@ Drawer {
                         Layout.alignment: Qt.AlignLeft
                         Layout.preferredHeight: 24
                         Layout.preferredWidth: 24
+
+                        MultiEffect {
+                          id: iconImageCol
+                          source: iconImage
+                          anchors.fill: iconImage
+                          colorization: 1.0 // opacity equivalent
+                          colorizationColor: Config.Settings.palette.secondary.col200
+                        }
                     }
 
                     Text {
@@ -103,14 +113,14 @@ Drawer {
                     }
 
                     onEntered: {
-                        iconImage.color = Config.Settings.palette.secondary.col100
+                        iconImageCol.colorizationColor = Config.Settings.palette.secondary.col100
                         label.color = Config.Settings.palette.secondary.col100
                         sideMenuListItem.color = Config.Settings.palette.secondary.col400
                     }
 
                     onExited: {
                         label.color = Config.Settings.palette.secondary.col200
-                        iconImage.color = label.color = Config.Settings.palette.secondary.col200
+                        iconImageCol.colorizationColor = label.color = Config.Settings.palette.secondary.col200
                         sideMenuListItem.color = Config.Settings.palette.secondary.col500
                     }
                 }

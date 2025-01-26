@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Universal
 import QtQuick.Layouts
+import QtQuick.VectorImage
+import QtQuick.Effects
 
 import "../config" as Config
 
@@ -19,11 +21,18 @@ Rectangle {
 
     RowLayout {
         spacing: 8
-        IconImage {
-            color: Config.Settings.palette.secondary.col200
+        VectorImage {
+            id: customCheck
             source: checkBox.isChecked ? "../resources/checkSquare.svg" : "../resources/square.svg"
             Layout.preferredWidth: 24
             Layout.preferredHeight: 24
+            MultiEffect {
+              id: customCheckCol
+              source: customCheck
+              anchors.fill: customCheck
+              colorization: 1.0 // opacity equivalent
+              colorizationColor: Config.Settings.palette.secondary.col200
+            }
         }
 
         Label {

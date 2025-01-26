@@ -7,8 +7,8 @@ import "../config" as Config
 
 Rectangle {
     id: logsSettings
-    Layout.preferredWidth: parent.width - 8
-    Layout.preferredHeight: parent.height - 8
+    //Layout.preferredWidth: parent.width - 8
+    //Layout.preferredHeight: parent.height - 8
     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
     color: "transparent"
 
