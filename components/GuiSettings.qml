@@ -81,12 +81,7 @@ Rectangle {
 
                         CustomComboBox {
                             id: languageSelector
-                            model: ListModel{
-                                id: languages
-                                ListElement{ languageText: "Deutsch (Deutsch)" }
-                                ListElement{ languageText: "Second" }
-                                ListElement{ languageText: "Third" }
-                            }
+                            model: Config.Settings.languages
                         }
                     }
 

@@ -31,4 +31,12 @@ QtObject {
         "Raising Big Blind ...",
         "Stacking Chips ..."
     ]
+
+    readonly property var languages: [
+            { langName: "Deutsch (Deutsch)", code: "de" },
+            { langName: "English (English)", code: "en" },
+            { langName: "French (Français)", code: "fr"}
+        ]
+
+    property string currentLanguage: "de"
 }
