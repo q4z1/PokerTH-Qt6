@@ -28,7 +28,7 @@ Rectangle {
             text: qsTr("Benutzeroberfläche")
             font.bold: true
             font.pointSize: 12
-            color: Config.Settings.palette.secondary.col200
+            color: Config.StaticData.palette.secondary.col200
         }
 
         Rectangle {
@@ -40,7 +40,7 @@ Rectangle {
             Layout.leftMargin: 12
             Layout.rightMargin: 12
             Layout.alignment: Qt.AlignTop
-            color: Config.Settings.palette.secondary.col500
+            color: Config.StaticData.palette.secondary.col500
         }
 
         ColumnLayout {
@@ -49,7 +49,7 @@ Rectangle {
             Layout.topMargin: 4
             Layout.bottomMargin: 4
             Layout.leftMargin: 12
-            Layout.rightMargin: 12 
+            Layout.rightMargin: 12
 
             CustomTabBar {
                 id: guiSettingsTabBar
@@ -75,61 +75,66 @@ Rectangle {
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             text: qsTr("Sprache:")
-                            color: Config.Settings.palette.secondary.col200
+                            color: Config.StaticData.palette.secondary.col200
                             font.pointSize: 12
                         }
 
                         CustomComboBox {
                             id: languageSelector
-                            model: ListModel{
-                                id: languages
-                                ListElement{ languageText: "Deutsch (Deutsch)" }
-                                ListElement{ languageText: "Second" }
-                                ListElement{ languageText: "Third" }
-                            }
+                            model: Config.StaticData.languages
                         }
                     }
 
                     CustomCheckBox {
+                        objectName: "displayRightToolboxCheckbox"
                         label: qsTr("Rechte Toolbox anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "displayLeftToolboxCheckbox"
                         label: qsTr("Linke Toolbox anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "fadeOutLosingCardsAnimationCheckbox"
                         label: qsTr("Ausblend-Abination für Verliererkarten")
                     }
 
                     CustomCheckBox {
+                        objectName: "animatedCardsCheckbox"
                         label: qsTr("Animierte Karten")
                     }
 
                     CustomCheckBox {
+                        objectName: "reverseFKeysOrderCheckbox"
                         label: qsTr("F-Tasten-Reihenfolge umkehren (F1 - F4)")
-                        isChecked: false
+                        defaultValue: false
                     }
 
                     CustomCheckBox {
+                        objectName: "showBlindButtonsCheckbox"
                         label: qsTr("Symbole für Small Blind und Big Blind anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "showHandChanceMonitorCheckbox"
                         label: qsTr("Kartenchancenmonitor anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "showOwnCardsOnMouseClickCheckbox"
                         label: qsTr("Eigene Karten nur bei Mausklick anzeigen anzeigen")
-                        isChecked: false
+                        defaultValue: false
                     }
 
                     CustomCheckBox {
+                        objectName: "disableSplashScreenOnStartupCheckbox"
                         label: qsTr("Startbildschirm beim Startvorgang deaktivieren")
-                        isChecked: false
+                        defaultValue: false
                     }
 
                     CustomCheckBox {
+                        objectName: "doNotTranslatePokerTermsCheckbox"
                         label: qsTr("Pokerausdrücke - wie Check, Call und Raise - beim Spieltisch-Stil nicht übersetzen")
                     }
                 }
@@ -138,34 +143,41 @@ Rectangle {
                     id: networkTab
 
                     CustomCheckBox {
+                        objectName: "showCountryFlagOnAvatarCheckbox"
                         label: qsTr("Landesflagge in der Ecke des Avatars anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "showNetworkStatusColorOnAvatarCheckbox"
                         label: qsTr("Netzwerkstatus-Farbe in der Ecke des Avatars anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "focusBetInputOnTurnCheckbox"
                         label: qsTr("Cursor ins \"Biete\"-Eingabefeld setzen, wenn Sie an der Reihe sind")
-                        isChecked: false
+                        defaultValue: false
                     }
 
                     CustomCheckBox {
+                        objectName: "preventAccidentalCallAfterBigRaiseCheckbox"
                         label: qsTr("Versehentliches Call nach einem großen Raise verhindern")
                     }
 
                     CustomCheckBox {
+                        objectName: "doNotHideIgnoredPlayerAvatarsCheckbox"
                         label: qsTr("Avatare von ignorierten Spielern nicht verbergen")
-                        isChecked: false
+                        defaultValue: false
                     }
 
                     CustomCheckBox {
+                        objectName: "showLobbyChatCheckbox"
                         label: qsTr("Lobby-Chat anzeigen")
                     }
 
                     CustomCheckBox {
+                        objectName: "disableEmoticonsInChatCheckbox"
                         label: qsTr("Emoticons im Chat deaktivieren")
-                        isChecked: false
+                        defaultValue: false
                     }
                 }
             }

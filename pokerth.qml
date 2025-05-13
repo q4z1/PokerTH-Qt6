@@ -24,9 +24,13 @@ ApplicationWindow {
     visible: true
     title: qsTr("PokerTH - v2.0 alpha")
 
+    Component.onCompleted: {
+        LanguageManager.switchLanguage(Config.Parameters.language)
+    }
+
     Rectangle {
         anchors.fill: parent
-        color: Config.Settings.palette.secondary.col700
+        color: Config.StaticData.palette.secondary.col700
     }
 
     ColumnLayout{
@@ -40,7 +44,7 @@ ApplicationWindow {
             Layout.preferredWidth: parent.width
             Layout.preferredHeight: 38
             Layout.alignment: Qt.AlignTop
-            color: Config.Settings.palette.secondary.col700
+            color: Config.StaticData.palette.secondary.col700
 
             RowLayout {
                 id: topBarColumns
@@ -70,11 +74,11 @@ ApplicationWindow {
                         }
 
                         onEntered: {
-                            topBarMenuIconCol.colorizationColor = Config.Settings.palette.secondary.col100
+                            topBarMenuIconCol.colorizationColor = Config.StaticData.palette.secondary.col100
                         }
 
                         onExited: {
-                            topBarMenuIconCol.colorizationColor = Config.Settings.palette.secondary.col200
+                            topBarMenuIconCol.colorizationColor = Config.StaticData.palette.secondary.col200
                         }
                     }
                     MultiEffect {
@@ -82,7 +86,7 @@ ApplicationWindow {
                       source: topBarMenuIcon
                       anchors.fill: topBarMenuIcon
                       colorization: 1.0 // opacity equivalent
-                      colorizationColor: Config.Settings.palette.secondary.col200
+                      colorizationColor: Config.StaticData.palette.secondary.col200
                     }
                 }
 
@@ -114,11 +118,11 @@ ApplicationWindow {
                         }
 
                         onEntered: {
-                            topBarSettingsIconCol.colorizationColor = Config.Settings.palette.secondary.col100
+                            topBarSettingsIconCol.colorizationColor = Config.StaticData.palette.secondary.col100
                         }
 
                         onExited: {
-                            topBarSettingsIconCol.colorizationColor = Config.Settings.palette.secondary.col200
+                            topBarSettingsIconCol.colorizationColor = Config.StaticData.palette.secondary.col200
                         }
                     }
 
@@ -127,7 +131,7 @@ ApplicationWindow {
                       source: topBarSettingsIcon
                       anchors.fill: topBarSettingsIcon
                       colorization: 1.0 // opacity equivalent
-                      colorizationColor: Config.Settings.palette.secondary.col200
+                      colorizationColor: Config.StaticData.palette.secondary.col200
                     }
                 }
 

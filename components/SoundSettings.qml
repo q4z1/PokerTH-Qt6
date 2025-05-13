@@ -27,7 +27,7 @@ Rectangle {
             text: qsTr("Sound")
             font.bold: true
             font.pointSize: 12
-            color: Config.Settings.palette.secondary.col200
+            color: Config.StaticData.palette.secondary.col200
         }
 
         Rectangle {
@@ -39,7 +39,7 @@ Rectangle {
             Layout.leftMargin: 12
             Layout.rightMargin: 12
             Layout.alignment: Qt.AlignTop
-            color: Config.Settings.palette.secondary.col500
+            color: Config.StaticData.palette.secondary.col500
         }
 
         ColumnLayout {

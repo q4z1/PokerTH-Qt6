@@ -26,7 +26,7 @@ Rectangle {
             text: qsTr("Internetspiel")
             font.bold: true
             font.pointSize: 12
-            color: Config.Settings.palette.secondary.col200
+            color: Config.StaticData.palette.secondary.col200
         }
     }
 }
