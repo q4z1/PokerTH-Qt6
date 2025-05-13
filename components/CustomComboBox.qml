@@ -20,7 +20,7 @@ ComboBox {
             for (var i = 0; i < model.length; ++i) {
                 if (model[i].code === currentLangCode) {
                     comboBox.currentIndex = i;
-                    break;
+                    return
                 }
             }
             if (comboBox.currentIndex === -1 && model.length > 0) {

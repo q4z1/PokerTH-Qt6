@@ -7,6 +7,7 @@
 #include <QSettings>
 #include <QQuickStyle>
 #include <QIcon>
+#include <QTranslator>
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +15,14 @@ int main(int argc, char *argv[])
     QGuiApplication::setOrganizationName("inquies");
 
     QGuiApplication app(argc, argv);
+
+    const QLocale locale;
+    const QString baseName = "pokerth";
+
+    QTranslator translator;
+    if (translator.load(locale, baseName, "_", ":/i18n")) {
+        app.installTranslator(&translator);
+    }
 
     QIcon::setThemeName("pokerth");
 

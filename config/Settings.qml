@@ -33,10 +33,26 @@ QtObject {
     ]
 
     readonly property var languages: [
-            { langName: "Deutsch (Deutsch)", code: "de" },
-            { langName: "English (English)", code: "en" },
-            { langName: "French (Français)", code: "fr"}
+            { langName: "Deutsch (Deutsch)", code: "de_DE"},
+            { langName: "English (English)", code: "en_US"},
+            { langName: "French (Français)", code: "fr_FR"}
         ]
 
-    property string currentLanguage: "de"
+    function findSupportedLocale(systemName) {
+        var closestMatch = "en_US" // Default
+        var shortName = systemName.substring(0,2)
+        for (var i = 0; i < languages.length; ++i) {
+            var currentCode = languages[i].code;
+            if (currentCode === systemName) {
+                return systemName;
+            }
+            if (currentCode.substring(0,2) === shortName) {
+                closestMatch = currentCode;
+            }
+        }
+
+        return closestMatch;
+    }
+
+    property string currentLanguage: findSupportedLocale(Qt.locale().name)
 }
