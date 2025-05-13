@@ -6,15 +6,15 @@
     <message>
         <location filename="../pages/AboutPage.qml" line="30"/>
         <source>Über PokerTH</source>
-        <translation type="unfinished"></translation>
+        <translation>Über PokerTH</translation>
     </message>
 </context>
 <context>
     <name>CustomCheckBox</name>
     <message>
-        <location filename="../components/CustomCheckBox.qml" line="41"/>
+        <location filename="../components/CustomCheckBox.qml" line="42"/>
         <source>CheckBox LabelText</source>
-        <translation type="unfinished"></translation>
+        <translation>CheckBox LabelText</translation>
     </message>
 </context>
 <context>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../components/CustomToggle.qml" line="43"/>
         <source>CheckBox LabelText</source>
-        <translation type="unfinished"></translation>
+        <translation>CheckBox LabelText</translation>
     </message>
 </context>
 <context>
@@ -30,32 +30,32 @@
     <message>
         <location filename="../pages/GamePage.qml" line="176"/>
         <source>Pot</source>
-        <translation type="unfinished"></translation>
+        <translation>Pot</translation>
     </message>
     <message>
         <location filename="../pages/GamePage.qml" line="186"/>
         <source>Total: $0</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesamt: $0</translation>
     </message>
     <message>
         <location filename="../pages/GamePage.qml" line="196"/>
         <source>Bets: $90</source>
-        <translation type="unfinished"></translation>
+        <translation>Einsätze: $90</translation>
     </message>
     <message>
         <location filename="../pages/GamePage.qml" line="218"/>
         <source>Preflop</source>
-        <translation type="unfinished"></translation>
+        <translation>Preflop</translation>
     </message>
     <message>
         <location filename="../pages/GamePage.qml" line="229"/>
         <source>Game: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiel: 1</translation>
     </message>
     <message>
         <location filename="../pages/GamePage.qml" line="239"/>
         <source>Hand: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Hand: 1</translation>
     </message>
 </context>
 <context>
@@ -63,107 +63,107 @@
     <message>
         <location filename="../components/GuiSettings.qml" line="28"/>
         <source>Benutzeroberfläche</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzeroberfläche</translation>
     </message>
     <message>
         <location filename="../components/GuiSettings.qml" line="56"/>
         <source>Gemeinsam</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemeinsam</translation>
     </message>
     <message>
         <location filename="../components/GuiSettings.qml" line="56"/>
         <source>Netzwerk-/Internetspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerk-/Internetspiel</translation>
     </message>
     <message>
         <location filename="../components/GuiSettings.qml" line="77"/>
         <source>Sprache:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprache:</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="89"/>
+        <location filename="../components/GuiSettings.qml" line="90"/>
         <source>Rechte Toolbox anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechte Toolbox anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="93"/>
+        <location filename="../components/GuiSettings.qml" line="95"/>
         <source>Linke Toolbox anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Linke Toolbox anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="97"/>
+        <location filename="../components/GuiSettings.qml" line="100"/>
         <source>Ausblend-Abination für Verliererkarten</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../components/GuiSettings.qml" line="101"/>
-        <source>Animierte Karten</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausblend-Animation für Verliererkarten</translation>
     </message>
     <message>
         <location filename="../components/GuiSettings.qml" line="105"/>
-        <source>F-Tasten-Reihenfolge umkehren (F1 - F4)</source>
-        <translation type="unfinished"></translation>
+        <source>Animierte Karten</source>
+        <translation>Animierte Karten</translation>
     </message>
     <message>
         <location filename="../components/GuiSettings.qml" line="110"/>
+        <source>F-Tasten-Reihenfolge umkehren (F1 - F4)</source>
+        <translation>F-Tasten-Reihenfolge umkehren (F1 - F4)</translation>
+    </message>
+    <message>
+        <location filename="../components/GuiSettings.qml" line="116"/>
         <source>Symbole für Small Blind und Big Blind anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Symbole für Small Blind und Big Blind anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="114"/>
+        <location filename="../components/GuiSettings.qml" line="121"/>
         <source>Kartenchancenmonitor anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenchancenmonitor anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="118"/>
+        <location filename="../components/GuiSettings.qml" line="126"/>
         <source>Eigene Karten nur bei Mausklick anzeigen anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Eigene Karten nur bei Mausklick anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="123"/>
+        <location filename="../components/GuiSettings.qml" line="132"/>
         <source>Startbildschirm beim Startvorgang deaktivieren</source>
-        <translation type="unfinished"></translation>
+        <translation>Startbildschirm beim Startvorgang deaktivieren</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="128"/>
+        <location filename="../components/GuiSettings.qml" line="138"/>
         <source>Pokerausdrücke - wie Check, Call und Raise - beim Spieltisch-Stil nicht übersetzen</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokerausdrücke - wie Check, Call und Raise - beim Spieltisch-Stil nicht übersetzen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="136"/>
+        <location filename="../components/GuiSettings.qml" line="147"/>
         <source>Landesflagge in der Ecke des Avatars anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Landesflagge in der Ecke des Avatars anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="140"/>
+        <location filename="../components/GuiSettings.qml" line="152"/>
         <source>Netzwerkstatus-Farbe in der Ecke des Avatars anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkstatus-Farbe in der Ecke des Avatars anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="144"/>
+        <location filename="../components/GuiSettings.qml" line="157"/>
         <source>Cursor ins &quot;Biete&quot;-Eingabefeld setzen, wenn Sie an der Reihe sind</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor ins &quot;Biete&quot;-Eingabefeld setzen, wenn Sie an der Reihe sind</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="149"/>
+        <location filename="../components/GuiSettings.qml" line="163"/>
         <source>Versehentliches Call nach einem großen Raise verhindern</source>
-        <translation type="unfinished"></translation>
+        <translation>Versehentliches Call nach einem großen Raise verhindern</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="153"/>
+        <location filename="../components/GuiSettings.qml" line="168"/>
         <source>Avatare von ignorierten Spielern nicht verbergen</source>
-        <translation type="unfinished"></translation>
+        <translation>Avatare von ignorierten Spielern nicht verbergen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="158"/>
+        <location filename="../components/GuiSettings.qml" line="174"/>
         <source>Lobby-Chat anzeigen</source>
-        <translation type="unfinished"></translation>
+        <translation>Lobby-Chat anzeigen</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="162"/>
+        <location filename="../components/GuiSettings.qml" line="179"/>
         <source>Emoticons im Chat deaktivieren</source>
-        <translation type="unfinished"></translation>
+        <translation>Emoticons im Chat deaktivieren</translation>
     </message>
 </context>
 <context>
@@ -171,7 +171,7 @@
     <message>
         <location filename="../components/InternetGameSettings.qml" line="26"/>
         <source>Internetspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Internetspiel</translation>
     </message>
 </context>
 <context>
@@ -179,7 +179,7 @@
     <message>
         <location filename="../pages/LocalGamePage.qml" line="30"/>
         <source>Lokales Spiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokales Spiel</translation>
     </message>
 </context>
 <context>
@@ -187,7 +187,7 @@
     <message>
         <location filename="../components/LocalGameSettings.qml" line="26"/>
         <source>Lokales Spiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokales Spiel</translation>
     </message>
 </context>
 <context>
@@ -195,7 +195,7 @@
     <message>
         <location filename="../pages/LogsPage.qml" line="30"/>
         <source>Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Logs</translation>
     </message>
 </context>
 <context>
@@ -203,7 +203,7 @@
     <message>
         <location filename="../components/LogsSettings.qml" line="26"/>
         <source>Log-Nachrichten</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Nachrichten</translation>
     </message>
 </context>
 <context>
@@ -211,7 +211,7 @@
     <message>
         <location filename="../pages/NetworkGameCreatePage.qml" line="30"/>
         <source>Netzwerkspiel erstellen</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel erstellen</translation>
     </message>
 </context>
 <context>
@@ -219,7 +219,7 @@
     <message>
         <location filename="../pages/NetworkGameEnterPage.qml" line="30"/>
         <source>Netzwerkspiel beitreten</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel beitreten</translation>
     </message>
 </context>
 <context>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../components/NetworkGameSettings.qml" line="26"/>
         <source>Netzwerkspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel</translation>
     </message>
 </context>
 <context>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../components/NicknameAvatarSettings.qml" line="26"/>
         <source>Nicknamen/Avatare</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicknamen/Avatare</translation>
     </message>
 </context>
 <context>
@@ -243,7 +243,7 @@
     <message>
         <location filename="../pages/PreLoader.qml" line="125"/>
         <source>PokerTH - v2.0 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>PokerTH - v2.0 alpha</translation>
     </message>
 </context>
 <context>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../components/ResetSettings.qml" line="26"/>
         <source>Standardeinstellung</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardeinstellung</translation>
     </message>
 </context>
 <context>
@@ -259,47 +259,47 @@
     <message>
         <location filename="../pages/SettingsPage.qml" line="166"/>
         <source>Benutzeroberfläche</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzeroberfläche</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="171"/>
         <source>Stil</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="176"/>
         <source>Sound</source>
-        <translation type="unfinished"></translation>
+        <translation>Sound</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="181"/>
         <source>Lokales Spiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokales Spiel</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="186"/>
         <source>Netzwerkspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="191"/>
         <source>Internetspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Internetspiel</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="196"/>
         <source>Nicknamen/Avatare</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicknamen/Avatare</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="201"/>
         <source>Log-Nachrichten</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Nachrichten</translation>
     </message>
     <message>
         <location filename="../pages/SettingsPage.qml" line="206"/>
         <source>Standardeinstellung</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardeinstellung</translation>
     </message>
 </context>
 <context>
@@ -307,42 +307,42 @@
     <message>
         <location filename="../components/SideMenu.qml" line="36"/>
         <source>PokerTH - v2.0 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>PokerTH - v2.0 alpha</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="134"/>
         <source>Internetspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Internetspiel</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="139"/>
         <source>Lokales Spiel starten</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokales Spiel starten</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="144"/>
         <source>Netzwerkspiel erstellen</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel erstellen</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="149"/>
         <source>Netzwerkspiel beitreten</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel beitreten</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="154"/>
         <source>Einstellungen</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="159"/>
         <source>Über PokerTH</source>
-        <translation type="unfinished"></translation>
+        <translation>Über PokerTH</translation>
     </message>
     <message>
         <location filename="../components/SideMenu.qml" line="164"/>
         <source>Schließen</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
 </context>
 <context>
@@ -350,12 +350,12 @@
     <message>
         <location filename="../components/SoundSettings.qml" line="27"/>
         <source>Sound</source>
-        <translation type="unfinished"></translation>
+        <translation>Sound</translation>
     </message>
     <message>
         <location filename="../components/SoundSettings.qml" line="56"/>
         <source>Spiele Klangeffekte</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiele Klangeffekte</translation>
     </message>
 </context>
 <context>
@@ -363,27 +363,27 @@
     <message>
         <location filename="../pages/StartPage.qml" line="51"/>
         <source>Internetspiel</source>
-        <translation type="unfinished"></translation>
+        <translation>Internetspiel</translation>
     </message>
     <message>
         <location filename="../pages/StartPage.qml" line="58"/>
         <source>Lokales Spiel starten</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokales Spiel starten</translation>
     </message>
     <message>
         <location filename="../pages/StartPage.qml" line="65"/>
         <source>Netzwerkspiel erstellen</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel erstellen</translation>
     </message>
     <message>
         <location filename="../pages/StartPage.qml" line="72"/>
         <source>Netzwerkspiel beitreten</source>
-        <translation type="unfinished"></translation>
+        <translation>Netzwerkspiel beitreten</translation>
     </message>
     <message>
         <location filename="../pages/StartPage.qml" line="79"/>
         <source>Logs</source>
-        <translation type="unfinished"></translation>
+        <translation>Logs</translation>
     </message>
 </context>
 <context>
@@ -391,22 +391,22 @@
     <message>
         <location filename="../components/StyleSettings.qml" line="27"/>
         <source>Stil</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil</translation>
     </message>
     <message>
         <location filename="../components/StyleSettings.qml" line="55"/>
         <source>Spieltisch</source>
-        <translation type="unfinished"></translation>
+        <translation>Spieltisch</translation>
     </message>
     <message>
         <location filename="../components/StyleSettings.qml" line="55"/>
         <source>Kartenstapel</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenstapel</translation>
     </message>
     <message>
         <location filename="../components/StyleSettings.qml" line="55"/>
         <source>Kartenrückseite</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenrückseite</translation>
     </message>
 </context>
 <context>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../pokerth.qml" line="25"/>
         <source>PokerTH - v2.0 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>PokerTH - v2.0 alpha</translation>
     </message>
 </context>
 </TS>

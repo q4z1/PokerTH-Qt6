@@ -13,6 +13,8 @@ find_package(Qt6 REQUIRED COMPONENTS
 
 set(SRC_FILES
     pokerth.cpp
+    retranslate.cpp
+    retranslate.h
 )
 
 set(QML_FILES
@@ -44,7 +46,8 @@ set(QML_FILES
     pages/PreLoader.qml
     pages/SettingsPage.qml
     pages/StartPage.qml
-    config/Settings.qml
+    config/StaticData.qml
+    config/Parameters.qml
 )
 
 set(TS_FILES
@@ -112,7 +115,6 @@ qt_add_qml_module(pokerth
         "qmldir"
         "qtquickcontrols2.conf"
 )
-
 target_link_libraries(pokerth PUBLIC
     Qt6::Core
     Qt6::Gui

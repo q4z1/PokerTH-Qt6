@@ -39,7 +39,7 @@ GridLayout {
                 leftPadding: 4
                 bottomPadding: 3
                 Layout.preferredHeight: 22
-                color: Config.Settings.palette.secondary.col100
+                color: Config.StaticData.palette.secondary.col100
                 font.bold: true
                 Component.onCompleted: {
                     text = "$333"
@@ -62,7 +62,7 @@ GridLayout {
 
         Rectangle {
             anchors.fill: parent
-            color: Config.Settings.palette.secondary.col600
+            color: Config.StaticData.palette.secondary.col600
             opacity: 0.8
             radius: 5
         }
@@ -81,8 +81,8 @@ GridLayout {
                 Rectangle {
                     anchors.fill: parent
                     border.width: 1
-                    border.color: Config.Settings.palette.secondary.col200
-                    color: Config.Settings.palette.secondary.col600
+                    border.color: Config.StaticData.palette.secondary.col200
+                    color: Config.StaticData.palette.secondary.col600
                     opacity: 0.5
                 }
 
@@ -162,7 +162,7 @@ GridLayout {
                 id: playerName
                 width: parent.width / 2
                 horizontalAlignment: Text.AlignLeft
-                color: Config.Settings.palette.secondary.col100
+                color: Config.StaticData.palette.secondary.col100
                 font.bold: true
                 Component.onCompleted: {
                     text = "Player"

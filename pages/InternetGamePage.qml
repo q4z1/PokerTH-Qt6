@@ -10,7 +10,7 @@ Rectangle {
     id: internetGamePage
     Layout.fillWidth: true
     Layout.fillHeight: true
-    color: Config.Settings.palette.secondary.col700
+    color: Config.StaticData.palette.secondary.col700
 
     ColumnLayout {
         id: internetGamePageRows
@@ -22,13 +22,13 @@ Rectangle {
             Layout.fillHeight: true
             Layout.alignment: Qt.AlignTop
             Layout.topMargin: -38
-            color: Config.Settings.palette.secondary.col700
+            color: Config.StaticData.palette.secondary.col700
 
             // Label {
             //     id: internetGamePageLabel
-            //     color: Config.Settings.palette.secondary.col200
+            //     color: Config.StaticData.palette.secondary.col200
             //     text: qsTr("Internetspiel")
-            //     font.family: Config.Settings.loadedFont.font.family
+            //     font.family: Config.StaticData.loadedFont.font.family
             //     font.pointSize: 14
             //     font.bold: true
             // }

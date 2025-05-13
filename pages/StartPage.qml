@@ -37,7 +37,7 @@ Rectangle {
 
                 Rectangle {
                     anchors.fill: parent
-                    color: Config.Settings.palette.secondary.col700
+                    color: Config.StaticData.palette.secondary.col700
                     opacity: 0.8
                     radius: 5
                 }

@@ -12,7 +12,7 @@
 <context>
     <name>CustomCheckBox</name>
     <message>
-        <location filename="../components/CustomCheckBox.qml" line="41"/>
+        <location filename="../components/CustomCheckBox.qml" line="42"/>
         <source>CheckBox LabelText</source>
         <translation></translation>
     </message>
@@ -81,87 +81,87 @@
         <translation>Language:</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="89"/>
+        <location filename="../components/GuiSettings.qml" line="90"/>
         <source>Rechte Toolbox anzeigen</source>
         <translation>Display right toolbox</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="93"/>
+        <location filename="../components/GuiSettings.qml" line="95"/>
         <source>Linke Toolbox anzeigen</source>
         <translation>Display left toolbox</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="97"/>
+        <location filename="../components/GuiSettings.qml" line="100"/>
         <source>Ausblend-Abination für Verliererkarten</source>
         <translation>Display fade-out animation for losing cards</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="101"/>
+        <location filename="../components/GuiSettings.qml" line="105"/>
         <source>Animierte Karten</source>
         <translation>Show flip-card animation</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="105"/>
+        <location filename="../components/GuiSettings.qml" line="110"/>
         <source>F-Tasten-Reihenfolge umkehren (F1 - F4)</source>
         <translation>Reverse order of F-Keys (F1 - F4)</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="110"/>
+        <location filename="../components/GuiSettings.qml" line="116"/>
         <source>Symbole für Small Blind und Big Blind anzeigen</source>
         <translation>Show buttons for blinds</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="114"/>
+        <location filename="../components/GuiSettings.qml" line="121"/>
         <source>Kartenchancenmonitor anzeigen</source>
         <translation>Show hand chance monitor</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="118"/>
+        <location filename="../components/GuiSettings.qml" line="126"/>
         <source>Eigene Karten nur bei Mausklick anzeigen anzeigen</source>
         <translation>Show own card only on mouse click</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="123"/>
+        <location filename="../components/GuiSettings.qml" line="132"/>
         <source>Startbildschirm beim Startvorgang deaktivieren</source>
         <translation>Disable splashscreen on startup</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="128"/>
+        <location filename="../components/GuiSettings.qml" line="138"/>
         <source>Pokerausdrücke - wie Check, Call und Raise - beim Spieltisch-Stil nicht übersetzen</source>
         <translation>Don&apos;t tanslate poker strings like check, call, raise from game table style</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="136"/>
+        <location filename="../components/GuiSettings.qml" line="147"/>
         <source>Landesflagge in der Ecke des Avatars anzeigen</source>
         <translation>Show country flag in the corner of avatar</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="140"/>
+        <location filename="../components/GuiSettings.qml" line="152"/>
         <source>Netzwerkstatus-Farbe in der Ecke des Avatars anzeigen</source>
         <translation>Show network state color in the corner of the avatar</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="144"/>
+        <location filename="../components/GuiSettings.qml" line="157"/>
         <source>Cursor ins &quot;Biete&quot;-Eingabefeld setzen, wenn Sie an der Reihe sind</source>
         <translation>Switch keyboard focus to bet-input-field if it&apos;s your turn</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="149"/>
+        <location filename="../components/GuiSettings.qml" line="163"/>
         <source>Versehentliches Call nach einem großen Raise verhindern</source>
         <translation>Activate the &quot;accidentally call after big raise&quot; blocker</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="153"/>
+        <location filename="../components/GuiSettings.qml" line="168"/>
         <source>Avatare von ignorierten Spielern nicht verbergen</source>
         <translation>DO not hide avatars of ignored players</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="158"/>
+        <location filename="../components/GuiSettings.qml" line="174"/>
         <source>Lobby-Chat anzeigen</source>
         <translation>Show lobby chat</translation>
     </message>
     <message>
-        <location filename="../components/GuiSettings.qml" line="162"/>
+        <location filename="../components/GuiSettings.qml" line="179"/>
         <source>Emoticons im Chat deaktivieren</source>
         <translation>Disable emoticons in chat</translation>
     </message>

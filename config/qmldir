@@ -1,2 +1,3 @@
 module Config
-singleton Settings Settings.qml
+singleton StaticData StaticData.qml
+singleton Parameters Parameters.qml

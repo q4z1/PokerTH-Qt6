@@ -14,7 +14,7 @@ Drawer {
 
     background: Rectangle {
         anchors.fill: parent
-        color: Config.Settings.palette.secondary.col700
+        color: Config.StaticData.palette.secondary.col700
         opacity: 0.8
         border.width: 0
     }
@@ -32,9 +32,9 @@ Drawer {
 
         Label {
             id: sideMenuLabel
-            color: Config.Settings.palette.secondary.col200
+            color: Config.StaticData.palette.secondary.col200
             text: qsTr("PokerTH - v2.0 alpha")
-            font.family: Config.Settings.loadedFont.font.family
+            font.family: Config.StaticData.loadedFont.font.family
             Layout.alignment: Qt.AlignCenter
             Layout.bottomMargin: 24
             font.pointSize: 16
@@ -63,7 +63,7 @@ Drawer {
                 labelText: name
                 iconSource: "../resources/" + icon + ".svg"
 
-                color: Config.Settings.palette.secondary.col500
+                color: Config.StaticData.palette.secondary.col500
                 width: parent.width
                 height: 36
 
@@ -85,7 +85,7 @@ Drawer {
                           source: iconImage
                           anchors.fill: iconImage
                           colorization: 1.0 // opacity equivalent
-                          colorizationColor: Config.Settings.palette.secondary.col200
+                          colorizationColor: Config.StaticData.palette.secondary.col200
                         }
                     }
 
@@ -95,8 +95,8 @@ Drawer {
                         Layout.fillWidth: true
                         Layout.topMargin: 4
                         Layout.bottomMargin: 4
-                        color: Config.Settings.palette.secondary.col200
-                        font.family: Config.Settings.loadedFont.font.family
+                        color: Config.StaticData.palette.secondary.col200
+                        font.family: Config.StaticData.loadedFont.font.family
                         font.pointSize: 12
                         text: "StartSideMenuItem"
                     }
@@ -113,15 +113,15 @@ Drawer {
                     }
 
                     onEntered: {
-                        iconImageCol.colorizationColor = Config.Settings.palette.secondary.col100
-                        label.color = Config.Settings.palette.secondary.col100
-                        sideMenuListItem.color = Config.Settings.palette.secondary.col400
+                        iconImageCol.colorizationColor = Config.StaticData.palette.secondary.col100
+                        label.color = Config.StaticData.palette.secondary.col100
+                        sideMenuListItem.color = Config.StaticData.palette.secondary.col400
                     }
 
                     onExited: {
-                        label.color = Config.Settings.palette.secondary.col200
-                        iconImageCol.colorizationColor = label.color = Config.Settings.palette.secondary.col200
-                        sideMenuListItem.color = Config.Settings.palette.secondary.col500
+                        label.color = Config.StaticData.palette.secondary.col200
+                        iconImageCol.colorizationColor = label.color = Config.StaticData.palette.secondary.col200
+                        sideMenuListItem.color = Config.StaticData.palette.secondary.col500
                     }
                 }
             }
